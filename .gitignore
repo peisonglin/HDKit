@@ -1,0 +1,16 @@
+*~
+.DS_Store
+*.xcuserstate
+*.ts
+*.TS
+*.mp4
+*.MP4
+*.mkv
+*.MKV
+*.mov
+*.MOV
+*.avi
+*.AVI
+xcuserdata
+*.lock
+Pods
