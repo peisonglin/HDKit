@@ -1,9 +1,0 @@
-use_frameworks!
-
-platform :ios, '9.0'
-
-target 'HDKit_Example' do
-  pod 'HDKit', :path => '../'
-  
-  
-end
