@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 # 框架名
   s.name             = 'HDKit'
-  s.version          = '0.0.1'
+  s.version          = '1.0.0'
 #  简要描述
   s.summary          = '个人调用工具类，播放器'
   # 描述
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   #作者
   s.author           = { 'PSL' => '345455211@qq.com' }
   #定义平台
-  spec.platforms     = :ios
+  spec.platform = :ios
   
   #支持的iOS最小版本
   spec.ios.deployment_target = '9.0'
