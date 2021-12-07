@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   spec.platforms     = :ios
   
   #支持的iOS最小版本
-  spec.ios.deployment_target = "9.0"
+  spec.ios.deployment_target = '9.0'
   
   s.source           = { :git => 'https://github.com/peisonglin/HDKit.git', :tag => s.version.to_s }
 
