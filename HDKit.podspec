@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   # 框架名
   spec.name             = 'HDKit'
-  spec.version          = '1.0.0'
+  spec.version          = '1.0.1'
   #  简要描述
   spec.summary          = '个人调用工具类，播放器'
   # 描述
@@ -42,30 +42,31 @@ Pod::Spec.new do |spec|
   # HDObject.framework
   spec.subspec 'Main' do |s|
     
-    s.source_files = 'HDKit/Classes/HDKit/HDKit.framework/Headers/*.h'
-    s.vendored_frameworks='HDKit/Classes/HDKit/HDKit.framework'
-    s.public_header_files = 'HDKit/Classes/HDKit/HDKit.framework/Headers/*.h'
+    s.source_files = 'HDKit.framework/Headers/*.h'
+    s.vendored_frameworks='HDKit.framework'
+    s.public_header_files = 'HDKit.framework/Headers/*.h'
     #         s.framework  = 'AVFoundation','UIKit','CoreTelephony','Photos'
     #         s.library   = "iconv"
   end
   
-  #   ffmpeg 命令行库
+  # ffmpeg 命令行库
   spec.subspec 'Base' do |s|
     
-    s.source_files = 'HDKit/Classes/HDKitBase/HDKitBase.framework/Headers/*.h'
-    s.vendored_frameworks='HDKit/Classes/HDKitBase/HDKitBase.framework'
-    s.public_header_files = 'HDKit/Classes/HDKitBase/HDKitBase.framework/Headers/*.h'
+    s.source_files = 'HDKitBase.framework/Headers/*.h'
+    s.vendored_frameworks='HDKitBase.framework'
+    s.public_header_files = 'HDKitBase.framework/Headers/*.h'
     s.framework  ='CoreTelephony','Photos'
     s.library    = "iconv"
+    s.dependency 'HDKit/Main'
     
   end
   
   
   spec.subspec 'Player' do |s|
     
-    s.source_files = 'HDKit/Classes/HDKitPlayer/HDKitPlayer.framework/Headers/*.h'
-    s.vendored_frameworks='HDKit/Classes/HDKitPlayer/HDKitPlayer.framework'
-    s.public_header_files = 'HDKit/Classes/HDKitPlayer/HDKitPlayer.framework/Headers/*.h'
+    s.source_files = 'HDKitPlayer.framework/Headers/*.h'
+    s.vendored_frameworks='HDKitPlayer.framework'
+    s.public_header_files = 'HDKitPlayer.framework/Headers/*.h'
     s.library   = "iconv","z","bz2"
     s.framework  = 'CoreTelephony','Photos','CoreMedia','VideoToolbox','AudioToolbox'
     #       s.resources = 'HDObject/Assets/HDFFMpeg/*.bundle'

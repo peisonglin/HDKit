@@ -1,41 +1,18 @@
 
 
 #!/bin/sh
-
-target_Name="HDObjectGitHub"
-ClassesName="HDObject"
-
-path="/Users/Air/.cocoapods/repos/$ClassesName"
-
-if [ -d "${path}" ]
-then
- pod repo update "$path"
-fi
-
-
-
+#  pod repo push $target_Name.podspec --allow-warnings
+target_Name="HDKit"
+path=$(SRCROOT)
 
 if [ -d "${path}" ]
 then
   cd $path
-#  pod trunk push $ClassesName $target_Name.podspec --allow-warnings
-  pod repo push $ClassesName $target_Name.podspec --allow-warnings
-  for i in `ls`;do
-  if [ "$i" != $target_Name ]
-     then
-     rm -rf $i;
-     else
-         cd "`pwd`/$target_Name"
-         for i in `ls`;do if [ "$i" = Classes -o "$i" = Assets -o "$i" = HDObject -o "$i" = HDObject.xcodeproj -o "$i" = HDObject.xcworkspace -o "$i" = Podfile ];then rm -rf $i;fi;done;
-         cd $path
-  fi;
-  done;
+  pod trunk push $target_Name.podspec --allow-warnings
+  
 else
  echo 'pod文件不存在'
 fi
-
-
-
 
 echo '完成'
 

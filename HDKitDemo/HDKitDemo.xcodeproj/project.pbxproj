@@ -6,6 +6,20 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		452C49C1275F1E0E007AEA75 /* HDKit-Pod */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 452C49C2275F1E0E007AEA75 /* Build configuration list for PBXAggregateTarget "HDKit-Pod" */;
+			buildPhases = (
+				452C49C7275F1E16007AEA75 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "HDKit-Pod";
+			productName = "HDKit-Pod";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		452C482C275E275A007AEA75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 452C482B275E275A007AEA75 /* AppDelegate.m */; };
 		452C4832275E275A007AEA75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452C4831275E275A007AEA75 /* ViewController.m */; };
@@ -16,6 +30,7 @@
 		452C484E275E2A1C007AEA75 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 452C484C275E2A1C007AEA75 /* README.md */; };
 		452C484F275E2A1C007AEA75 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 452C484D275E2A1C007AEA75 /* LICENSE */; };
 		452C4925275EF05E007AEA75 /* HDKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 452C4924275EF05E007AEA75 /* HDKit.podspec */; };
+		452C4929275F02ED007AEA75 /* GitHub.sh in Resources */ = {isa = PBXBuildFile; fileRef = 452C4928275F02EC007AEA75 /* GitHub.sh */; };
 		F2F0CEDB1233364FF3B53257 /* libPods-HDKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFB9E3702663AF0703CD0C3 /* libPods-HDKitDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +50,7 @@
 		452C484C275E2A1C007AEA75 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		452C484D275E2A1C007AEA75 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		452C4924275EF05E007AEA75 /* HDKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HDKit.podspec; path = ../HDKit.podspec; sourceTree = "<group>"; };
+		452C4928275F02EC007AEA75 /* GitHub.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = GitHub.sh; path = ../GitHub.sh; sourceTree = "<group>"; };
 		75C63391677A8328FD55E6C5 /* Pods-HDKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDKitDemo.release.xcconfig"; path = "Target Support Files/Pods-HDKitDemo/Pods-HDKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +104,7 @@
 		452C4848275E29EE007AEA75 /* HDKit */ = {
 			isa = PBXGroup;
 			children = (
+				452C4928275F02EC007AEA75 /* GitHub.sh */,
 				452C4924275EF05E007AEA75 /* HDKit.podspec */,
 				452C484D275E2A1C007AEA75 /* LICENSE */,
 				452C484C275E2A1C007AEA75 /* README.md */,
@@ -144,6 +161,9 @@
 					452C4826275E275A007AEA75 = {
 						CreatedOnToolsVersion = 12.4;
 					};
+					452C49C1275F1E0E007AEA75 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 				};
 			};
 			buildConfigurationList = 452C4822275E275A007AEA75 /* Build configuration list for PBXProject "HDKitDemo" */;
@@ -160,6 +180,7 @@
 			projectRoot = "";
 			targets = (
 				452C4826275E275A007AEA75 /* HDKitDemo */,
+				452C49C1275F1E0E007AEA75 /* HDKit-Pod */,
 			);
 		};
 /* End PBXProject section */
@@ -171,6 +192,7 @@
 			files = (
 				452C484F275E2A1C007AEA75 /* LICENSE in Resources */,
 				452C483A275E2766007AEA75 /* LaunchScreen.storyboard in Resources */,
+				452C4929275F02ED007AEA75 /* GitHub.sh in Resources */,
 				452C484E275E2A1C007AEA75 /* README.md in Resources */,
 				452C4925275EF05E007AEA75 /* HDKit.podspec in Resources */,
 				452C4837275E2766007AEA75 /* Assets.xcassets in Resources */,
@@ -181,6 +203,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		452C49C7275F1E16007AEA75 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "open -a Terminal /Users/Air/PSL/Github_HDKit/HDKitSpec/GitHub.sh\n";
+		};
 		EF585FDA9817BAD9A26F3469 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,6 +429,24 @@
 			};
 			name = Release;
 		};
+		452C49C3275F1E0E007AEA75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BW25384C9A;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		452C49C4275F1E0E007AEA75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BW25384C9A;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -407,6 +464,15 @@
 			buildConfigurations = (
 				452C4841275E2766007AEA75 /* Debug */,
 				452C4842275E2766007AEA75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		452C49C2275F1E0E007AEA75 /* Build configuration list for PBXAggregateTarget "HDKit-Pod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				452C49C3275F1E0E007AEA75 /* Debug */,
+				452C49C4275F1E0E007AEA75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
