@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   #作者
   s.author           = { 'PSL' => '345455211@qq.com' }
   #定义平台
-  spec.platform     = :ios
+  spec.platforms     = :ios
   
   #支持的iOS最小版本
   spec.ios.deployment_target = "9.0"
