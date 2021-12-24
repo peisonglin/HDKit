@@ -8,13 +8,17 @@
 		<data>
 		FTvgU6Rd9wy3aGOgz/Os8v5I58E=
 		</data>
+		<key>Headers/HDKitPrefix.pch</key>
+		<data>
+		tnjoFBZvn4GN/IuEB51vxlALHv4=
+		</data>
 		<key>Headers/HDKitSDK.h</key>
 		<data>
 		WUCuQxXRYs15aA0hbmoC1nPRCE4=
 		</data>
 		<key>Headers/HDMacros.h</key>
 		<data>
-		/apxq3JNnCBB5if2Fha/HoVgHQ4=
+		k9BCgDRI30U5wFUy8ScKXSnw6ss=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -38,6 +42,17 @@
 			OviGH3VDmb/y9+BgDfcHv5SpA7DApIiIxGbGrP1JKq0=
 			</data>
 		</dict>
+		<key>Headers/HDKitPrefix.pch</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tnjoFBZvn4GN/IuEB51vxlALHv4=
+			</data>
+			<key>hash2</key>
+			<data>
+			4sWeo0j00f2SgkqaZt5XJEr5aUPYuDSdDdsfArlr4UI=
+			</data>
+		</dict>
 		<key>Headers/HDKitSDK.h</key>
 		<dict>
 			<key>hash</key>
@@ -53,11 +68,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/apxq3JNnCBB5if2Fha/HoVgHQ4=
+			k9BCgDRI30U5wFUy8ScKXSnw6ss=
 			</data>
 			<key>hash2</key>
 			<data>
-			60mlcwsF+ZB+jgHDQSYg8h0cr6wO77Ei9ytb5E2SVuI=
+			bt36HbW55u9sHkuweG83n2QyhmQ1CWdWGQKL50TlRMg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

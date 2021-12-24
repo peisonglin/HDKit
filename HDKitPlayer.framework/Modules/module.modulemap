@@ -1,6 +1,0 @@
-framework module HDKitPlayer {
-  umbrella header "HDKitPlayer.h"
-
-  export *
-  module * { export * }
-}

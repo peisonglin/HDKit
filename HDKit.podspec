@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   # 框架名
   spec.name             = 'HDKit'
-  spec.version          = '1.0.1'
+  spec.version          = '1.1.0'
   #  简要描述
   spec.summary          = '个人调用工具类，播放器'
   # 描述
@@ -37,7 +37,7 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.framework  = 'AVFoundation','UIKit'
-  
+#  spec.prefix_header_file = 'HDKit.framework/Headers/HDKitPrefix.pch'
   
   # HDObject.framework
   spec.subspec 'Main' do |s|
@@ -45,6 +45,7 @@ Pod::Spec.new do |spec|
     s.source_files = 'HDKit.framework/Headers/*.h'
     s.vendored_frameworks='HDKit.framework'
     s.public_header_files = 'HDKit.framework/Headers/*.h'
+    
     #         s.framework  = 'AVFoundation','UIKit','CoreTelephony','Photos'
     #         s.library   = "iconv"
   end
@@ -69,12 +70,13 @@ Pod::Spec.new do |spec|
     s.public_header_files = 'HDKitPlayer.framework/Headers/*.h'
     s.library   = "iconv","z","bz2"
     s.framework  = 'CoreTelephony','Photos','CoreMedia','VideoToolbox','AudioToolbox'
-    #       s.resources = 'HDObject/Assets/HDFFMpeg/*.bundle'
+    s.resources = 'HDKitPlayer.framework/*.bundle'
     #  项目库中使用的其他第三方库，多个用“,”分开
     s.dependency 'HDKit/Main'
+    s.dependency 'HDKit/Base'
     s.dependency 'MobileVLCKit','3.3.16.3'
-    s.dependency 'Masonry','~> 1.1.0'
-    s.dependency 'ReactiveObjC','~> 3.1.1'
+    s.dependency 'Masonry','1.1.0'
+    s.dependency 'ReactiveObjC','3.1.1'
     #       s.dependency 'FMDB','~> 2.7.5'
   end
   

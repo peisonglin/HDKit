@@ -1,0 +1,18 @@
+//
+//  HDKitPrefix.pch
+//  HDKit
+//
+//  Created by air on 2021/12/24.
+//
+
+#ifndef HDKitPrefix_pch
+#define HDKitPrefix_pch
+
+#ifdef __OBJC__
+
+#import "HDKitMacros.h"
+#import "HDKitObject.h"
+
+#endif
+
+#endif /* HDKitPrefix_pch */

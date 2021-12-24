@@ -138,7 +138,7 @@ NSNotificationCenter* notificationCenter = [NSNotificationCenter defaultCenter];
 #define MXStringDouble(s) [NSString stringWithFormat:@"%0.lf",s]
 #define MXStringFloatAll(s) [NSString stringWithFormat:@"%f",s]
 #define MXStringFormat(str,string) [NSString stringWithFormat:@"%@%@",str,string]
-#define MXImageUrl(name) [NSString stringWithFormat:@"HDBundle.bundle/%@",name]
+
 
 ///获取项目目录下的路径
 #define MXGetFilePath(fileAllName) [[NSBundle mainBundle] pathForResource:fileAllName ofType:nil]
@@ -201,6 +201,7 @@ alpha:1.0]
 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
 blue:((float)(rgbValue & 0xFF))/255.0 \
 alpha:a]
+
 #define MXColor1 UIColorFromRGB(0x33415D)//黑色
 #define MXColor2 UIColorFromRGB(0xFFFFFF)//白色文字
 #define MXColor3 UIColorFromRGB(0xBBBDC3)//灰1 文字
