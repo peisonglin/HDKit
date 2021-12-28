@@ -1,6 +1,0 @@
-framework module HDKitBase {
-  umbrella header "HDKitBase.h"
-
-  export *
-  module * { export * }
-}

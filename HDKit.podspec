@@ -42,9 +42,9 @@ Pod::Spec.new do |spec|
   # HDObject.framework
   spec.subspec 'Main' do |s|
     
-    s.source_files = 'HDKit.framework/Headers/*.h'
-    s.vendored_frameworks='HDKit.framework'
-    s.public_header_files = 'HDKit.framework/Headers/*.h'
+    s.source_files = 'FrameWork/HDKit.framework/Headers/*.h'
+    s.vendored_frameworks='FrameWork/HDKit.framework'
+    s.public_header_files = 'FrameWork/HDKit.framework/Headers/*.h'
     
     #         s.framework  = 'AVFoundation','UIKit','CoreTelephony','Photos'
     #         s.library   = "iconv"
@@ -53,9 +53,9 @@ Pod::Spec.new do |spec|
   # ffmpeg 命令行库
   spec.subspec 'Base' do |s|
     
-    s.source_files = 'HDKitBase.framework/Headers/*.h'
-    s.vendored_frameworks='HDKitBase.framework'
-    s.public_header_files = 'HDKitBase.framework/Headers/*.h'
+    s.source_files = 'FrameWork/HDKitBase.framework/Headers/*.h'
+    s.vendored_frameworks='FrameWork/HDKitBase.framework'
+    s.public_header_files = 'FrameWork/HDKitBase.framework/Headers/*.h'
     s.framework  ='CoreTelephony','Photos'
     s.library    = "iconv"
     s.dependency 'HDKit/Main'
@@ -65,14 +65,14 @@ Pod::Spec.new do |spec|
   
   spec.subspec 'Player' do |s|
     
-    s.source_files = 'HDKitPlayer.framework/Headers/*.h'
-    s.vendored_frameworks='HDKitPlayer.framework'
-    s.public_header_files = 'HDKitPlayer.framework/Headers/*.h'
+    s.source_files = 'FrameWork/HDKitPlayer.framework/Headers/*.h'
+    s.vendored_frameworks='FrameWork/HDKitPlayer.framework'
+    s.public_header_files = 'FrameWork/HDKitPlayer.framework/Headers/*.h'
     s.library   = "iconv","z","bz2"
     s.framework  = 'CoreTelephony','Photos','CoreMedia','VideoToolbox','AudioToolbox'
     s.resources = 'HDKitPlayer.framework/*.bundle'
     #  项目库中使用的其他第三方库，多个用“,”分开
-    s.dependency 'HDKit/Main'
+#    s.dependency 'HDKit/Main'
     s.dependency 'HDKit/Base'
     s.dependency 'MobileVLCKit','3.3.16.3'
     s.dependency 'Masonry','1.1.0'
