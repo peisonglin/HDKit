@@ -70,7 +70,7 @@ Pod::Spec.new do |spec|
     s.public_header_files = 'FrameWork/HDKitPlayer.framework/Headers/*.h'
     s.library   = "iconv","z","bz2"
     s.framework  = 'CoreTelephony','Photos','CoreMedia','VideoToolbox','AudioToolbox'
-    s.resources = 'HDKitPlayer.framework/*.bundle'
+    s.resources = 'FrameWork/HDKitPlayer.framework/*.bundle'
     #  项目库中使用的其他第三方库，多个用“,”分开
 #    s.dependency 'HDKit/Main'
     s.dependency 'HDKit/Base'
