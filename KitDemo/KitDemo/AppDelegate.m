@@ -19,6 +19,10 @@
     self.window = [[UIWindow alloc ]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor=[UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    [HDKitSDK setLogEnabled:131420];
+    [HDKitSDK starConfigAppkey:@"A89H6LJ8L96YK1JKHL23J5GD"];
+    
     UINavigationController *p=[[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]];
     self.window.rootViewController=p;
     

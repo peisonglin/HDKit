@@ -36,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		0DC68AD8C57D9B593266D48D /* Pods-KitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitDemo.release.xcconfig"; path = "Target Support Files/Pods-KitDemo/Pods-KitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		450DDEDD277B0E7800897431 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		459469132775D94A00C7E0F9 /* KitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		459469162775D94A00C7E0F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		459469172775D94A00C7E0F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +101,7 @@
 				459469172775D94A00C7E0F9 /* AppDelegate.m */,
 				4594691C2775D94A00C7E0F9 /* ViewController.h */,
 				4594691D2775D94A00C7E0F9 /* ViewController.m */,
+				450DDEDD277B0E7800897431 /* PrefixHeader.pch */,
 				4594691F2775D94A00C7E0F9 /* Main.storyboard */,
 				459469222775D95500C7E0F9 /* Assets.xcassets */,
 				459469242775D95500C7E0F9 /* LaunchScreen.storyboard */,
@@ -140,7 +142,8 @@
 				4594690F2775D94A00C7E0F9 /* Sources */,
 				459469102775D94A00C7E0F9 /* Frameworks */,
 				459469112775D94A00C7E0F9 /* Resources */,
-				2B9A45581022998888A6DCD2 /* [CP] Embed Pods Frameworks */,
+				334569DFCAE0ED7B626C182B /* [CP] Embed Pods Frameworks */,
+				0FC121D15B7602175A594A2C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,7 +207,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2B9A45581022998888A6DCD2 /* [CP] Embed Pods Frameworks */ = {
+		0FC121D15B7602175A594A2C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KitDemo/Pods-KitDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KitDemo/Pods-KitDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KitDemo/Pods-KitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		334569DFCAE0ED7B626C182B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -415,6 +435,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BW25384C9A;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KitDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = KitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -434,6 +455,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BW25384C9A;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KitDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = KitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
