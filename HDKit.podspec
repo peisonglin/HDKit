@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   # 框架名
   spec.name             = 'HDKit'
-  spec.version          = '1.0.3'
+  spec.version          = '1.0.4'
   #  简要描述
   spec.summary          = '个人调用工具类，播放器'
   # 描述
@@ -83,7 +83,9 @@ Pod::Spec.new do |spec|
   
   spec.default_subspecs = 'Main','Base','Player'
   
-  
+#  pod search找不到自己trunk push的库的解决方法
+#  /Users/air/Library/Caches/CocoaPods     删除search_index.json
+#使用 pod install --repo-update 安装（估计需要等待半小时以上才能github才能更新好）
   
 end
 
