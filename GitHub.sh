@@ -13,7 +13,7 @@ then
 else
  echo "podSpec文件不存在"
 fi
-
+ pod lib lint HDKit.podspec --allow-warnings --no-clean --verbose
 echo '完成'
 
 
