@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   # 框架名
   spec.name             = 'HDKit'
-  spec.version          = '1.0.5'
+  spec.version          = '1.0.6'
   #  简要描述
   spec.summary          = '个人调用工具类，播放器'
   # 描述
@@ -74,7 +74,7 @@ Pod::Spec.new do |spec|
     #  项目库中使用的其他第三方库，多个用“,”分开
 #    s.dependency 'HDKit/Main'
     s.dependency 'HDKit/Base'
-    s.dependency 'MobileVLCKit','3.3.16.3'
+#    s.dependency 'MobileVLCKit','3.3.16.3'
     s.dependency 'Masonry','1.1.0'
     s.dependency 'ReactiveObjC','3.1.1'
     #       s.dependency 'FMDB','~> 2.7.5'

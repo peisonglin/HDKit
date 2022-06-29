@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../HDKit/HDKit.xcodeproj">
+      location = "group:../../HDKitCode/HDKit.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:KitDemo.xcodeproj">
