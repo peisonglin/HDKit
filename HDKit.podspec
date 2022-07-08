@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   # 框架名
   spec.name             = 'HDKit'
-  spec.version          = '1.0.7'
+  spec.version          = '1.0.8'
   #  简要描述
   spec.summary          = '个人调用工具类，播放器'
   # 描述
