@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   # 框架名
   spec.name             = 'HDKit'
-  spec.version          = '1.1.0'
+  spec.version          = '1.1.1'
   #  简要描述
   spec.summary          = '个人调用工具类，播放器'
   # 描述
@@ -64,38 +64,20 @@ Pod::Spec.new do |spec|
   
   
   spec.subspec 'Player' do |s|
-      
-#    s.source_files = 'FrameWork/HDKitPlayer.framework/Headers/*.h'
-#    s.vendored_frameworks='FrameWork/HDKitPlayer.framework','FrameWork/IJKMediaFramework.framework'
-#    s.public_header_files = 'FrameWork/HDKitPlayer.framework/Headers/*.h','FrameWork/IJKMediaFramework.framework/Headers/*.h'
-#    s.library   = "iconv","z","bz2"
-#    s.framework  = 'CoreTelephony','Photos','CoreMedia','VideoToolbox','AudioToolbox'
-#    s.resources = 'FrameWork/HDKitPlayer.framework/*.bundle'
-#    #  项目库中使用的其他第三方库，多个用“,”分开
-##    s.dependency 'HDKit/Main'
-#    s.dependency 'HDKit/Base'
-#    s.dependency 'MobileVLCKit','3.3.16.3'
-##    s.dependency 'MobileVLCKit','3.4.1b11'
-#    s.dependency 'Masonry','1.1.0'
-#    s.dependency 'ReactiveObjC','3.1.1'
-##    s.dependency 'IJKMediaFramework','0.1.5'
-##    s.dependency 'FMDB','~> 2.7.5'
-
-s.source_files = 'FrameWork/HDKitPlayer.framework/Headers/*.h'
-s.vendored_frameworks='FrameWork/HDKitPlayer.framework'
-s.public_header_files = 'FrameWork/HDKitPlayer.framework/Headers/*.h'
-s.library   = "iconv","z","bz2"
-s.framework  = 'CoreTelephony','Photos','CoreMedia','VideoToolbox','AudioToolbox'
-s.resources = 'FrameWork/HDKitPlayer.framework/*.bundle'
-#  项目库中使用的其他第三方库，多个用“,”分开
+    
+    s.source_files = 'FrameWork/HDKitPlayer.framework/Headers/*.h'
+    s.vendored_frameworks='FrameWork/HDKitPlayer.framework'
+    s.public_header_files = 'FrameWork/HDKitPlayer.framework/Headers/*.h'
+    s.library   = "iconv","z","bz2"
+    s.framework  = 'CoreTelephony','Photos','CoreMedia','VideoToolbox','AudioToolbox'
+    s.resources = 'FrameWork/HDKitPlayer.framework/*.bundle'
+    #  项目库中使用的其他第三方库，多个用“,”分开
 #    s.dependency 'HDKit/Main'
-s.dependency 'HDKit/Base'
-s.dependency 'MobileVLCKit','3.3.16.3'
-#    s.dependency 'MobileVLCKit','3.4.1b11'
-s.dependency 'Masonry','1.1.0'
-s.dependency 'ReactiveObjC','3.1.1'
-
-
+    s.dependency 'HDKit/Base'
+    s.dependency 'MobileVLCKit','3.3.16.3'
+    s.dependency 'Masonry','1.1.0'
+    s.dependency 'ReactiveObjC','3.1.1'
+    #       s.dependency 'FMDB','~> 2.7.5'
   end
   
   
@@ -106,5 +88,6 @@ s.dependency 'ReactiveObjC','3.1.1'
 #使用 pod install --repo-update 安装（估计需要等待半小时以上才能github才能更新好）
   
 end
+
 
 
