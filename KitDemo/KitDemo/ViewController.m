@@ -7,6 +7,10 @@
 
 #import "ViewController.h"
 
+
+
+
+
 @interface ViewController ()<HDVideoPlayerDelegate>
 @property (nonatomic,strong)HDPlayer *player;
 @end
@@ -41,7 +45,7 @@
 }
 
 -(HDPlayerType)specifyCurrentPlayerType{
-    return AVPlayerType;
+    return FFMPlayeType;
 }
 -(BOOL)observePhoneAllowInterfaceOrientations{
     return YES;

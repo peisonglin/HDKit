@@ -7,6 +7,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "IJKPlayerViewController.h"
+#import "LiveViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -23,7 +25,7 @@
     [HDKitSDK setLogEnabled:131420];
     [HDKitSDK starConfigAppkey:@"A89H6LJ8L96YK1JKHL23J5GD"];
     
-    UINavigationController *p=[[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]];
+    UINavigationController *p=[[UINavigationController alloc]initWithRootViewController:[[LiveViewController alloc]init]];
     self.window.rootViewController=p;
     
     

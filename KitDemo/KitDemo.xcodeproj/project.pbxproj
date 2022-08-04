@@ -32,6 +32,9 @@
 		459469422775DBB900C7E0F9 /* HDKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 4594693E2775DBB900C7E0F9 /* HDKit.podspec */; };
 		459469432775DBB900C7E0F9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4594693F2775DBB900C7E0F9 /* README.md */; };
 		459469442775DBB900C7E0F9 /* GitHub.sh in Resources */ = {isa = PBXBuildFile; fileRef = 459469402775DBB900C7E0F9 /* GitHub.sh */; };
+		E5D45FCB2888EDEE002FA4B0 /* IJKPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D45FCA2888EDEE002FA4B0 /* IJKPlayerViewController.m */; };
+		E5D563EC289BDD72007017A6 /* LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D563EB289BDD72007017A6 /* LiveViewController.m */; };
+		E5D563EE289BDE11007017A6 /* 1.ts in Resources */ = {isa = PBXBuildFile; fileRef = E5D563ED289BDE11007017A6 /* 1.ts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,11 @@
 		459469402775DBB900C7E0F9 /* GitHub.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = GitHub.sh; path = ../GitHub.sh; sourceTree = "<group>"; };
 		4F7058219BB3FE54C08B945E /* libPods-KitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDD49E9B764C431B2F6AFB0 /* Pods-KitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitDemo.debug.xcconfig"; path = "Target Support Files/Pods-KitDemo/Pods-KitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E5D45FC92888EDEE002FA4B0 /* IJKPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IJKPlayerViewController.h; sourceTree = "<group>"; };
+		E5D45FCA2888EDEE002FA4B0 /* IJKPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IJKPlayerViewController.m; sourceTree = "<group>"; };
+		E5D563EA289BDD72007017A6 /* LiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveViewController.h; sourceTree = "<group>"; };
+		E5D563EB289BDD72007017A6 /* LiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveViewController.m; sourceTree = "<group>"; };
+		E5D563ED289BDE11007017A6 /* 1.ts */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.ts; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +109,17 @@
 				459469172775D94A00C7E0F9 /* AppDelegate.m */,
 				4594691C2775D94A00C7E0F9 /* ViewController.h */,
 				4594691D2775D94A00C7E0F9 /* ViewController.m */,
+				E5D563EA289BDD72007017A6 /* LiveViewController.h */,
+				E5D563EB289BDD72007017A6 /* LiveViewController.m */,
+				E5D45FC92888EDEE002FA4B0 /* IJKPlayerViewController.h */,
+				E5D45FCA2888EDEE002FA4B0 /* IJKPlayerViewController.m */,
 				450DDEDD277B0E7800897431 /* PrefixHeader.pch */,
 				4594691F2775D94A00C7E0F9 /* Main.storyboard */,
 				459469222775D95500C7E0F9 /* Assets.xcassets */,
 				459469242775D95500C7E0F9 /* LaunchScreen.storyboard */,
 				459469272775D95500C7E0F9 /* Info.plist */,
 				459469282775D95500C7E0F9 /* main.m */,
+				E5D563ED289BDE11007017A6 /* 1.ts */,
 			);
 			path = KitDemo;
 			sourceTree = "<group>";
@@ -142,7 +155,7 @@
 				4594690F2775D94A00C7E0F9 /* Sources */,
 				459469102775D94A00C7E0F9 /* Frameworks */,
 				459469112775D94A00C7E0F9 /* Resources */,
-				DAD2DB6BDB03983D45A9272F /* [CP] Copy Pods Resources */,
+				221DC6D612DCD8317618A4F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +208,7 @@
 			files = (
 				459469432775DBB900C7E0F9 /* README.md in Resources */,
 				459469422775DBB900C7E0F9 /* HDKit.podspec in Resources */,
+				E5D563EE289BDE11007017A6 /* 1.ts in Resources */,
 				459469442775DBB900C7E0F9 /* GitHub.sh in Resources */,
 				459469262775D95500C7E0F9 /* LaunchScreen.storyboard in Resources */,
 				459469232775D95500C7E0F9 /* Assets.xcassets in Resources */,
@@ -206,6 +220,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		221DC6D612DCD8317618A4F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KitDemo/Pods-KitDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KitDemo/Pods-KitDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KitDemo/Pods-KitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		459469382775DB3500C7E0F9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,23 +253,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "open -a Terminal /Users/peiwu/PSL/HDKitObject/GitHub.sh\n";
-		};
-		DAD2DB6BDB03983D45A9272F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KitDemo/Pods-KitDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KitDemo/Pods-KitDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KitDemo/Pods-KitDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		E815E2F9DECF4EC012FCC4DB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -269,8 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D563EC289BDD72007017A6 /* LiveViewController.m in Sources */,
 				4594691E2775D94A00C7E0F9 /* ViewController.m in Sources */,
 				459469182775D94A00C7E0F9 /* AppDelegate.m in Sources */,
+				E5D45FCB2888EDEE002FA4B0 /* IJKPlayerViewController.m in Sources */,
 				459469292775D95500C7E0F9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
